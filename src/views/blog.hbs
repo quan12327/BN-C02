@@ -4,9 +4,9 @@
         <div class="row">
             <div class="col-lg-9">
                 <h3 class="section-title-left">Featured posts </h3>
-                <div class="row">
+                <div class="row justify-content-center">
                     <div class="col-lg-5 col-md-6 item">
-                        {{#with bigBlog}}
+                        {{#each blog}}
                         <div class="card">
                             <div class="card-header p-0 position-relative">
                                 <a href="blog/{{this.id}}">
@@ -31,31 +31,6 @@
                                 </ul>
                                 <a href="#featuredposts" class="btn btn-style btn-outline mt-4">All featured
                                     posts</a>
-                            </div>
-                            {{/with}}
-                        </div>
-                    </div>
-                    <div class="col-lg-7 col-md-6 mt-md-0 mt-5">
-                        <div class="list-view list-view1">
-                            {{#each sideBlogs}}
-                            <div class="grids5-info mt-4">
-                                <a href="blog/{{this.id}}" class="d-block zoom"><img src="{{this.image}}" alt=""
-                                        class="img-fluid radius-image news-image"></a>
-                                <div class="blog-info align-self">
-                                    <a href="blog/{{this.id}}" class="blog-desc1">{{this.title}}
-                                    </a>
-                                    <div class="author align-items-center mt-3 mb-1">
-                                        <a href="blog/{{this.id}}">{{this.author}}</a> in <a href="blog/{{this.id}}">Design</a>
-                                    </div>
-                                    <ul class="blog-meta">
-                                        <li class="meta-item blog-lesson">
-                                            <span class="meta-value">{{this.createdDate}} </span>
-                                        </li>
-                                        <li class="meta-item blog-students">
-                                            <span class="meta-value"> 6min read</span>
-                                        </li>
-                                    </ul>
-                                </div>
                             </div>
                             {{/each}}
                         </div>

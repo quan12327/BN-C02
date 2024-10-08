@@ -6,7 +6,7 @@ async function connectToDatabase(params) {
             host: 'localhost',
             user: 'root',
             password: 'Quanga123',
-            database: 'blogpage',
+            database: 'blog_database',
         })
         console.log("Connect to database")
         return connection;
